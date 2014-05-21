@@ -1,0 +1,33 @@
+{
+    "name": "wtool/wpautoupdate-plugin",
+    "description": "App for publishing wordpress plugins to custom repo",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Janez Troha",
+            "email": "dz0ny@ubuntu.si"
+        }
+    ],
+    "require-dev": {
+        "phpspec/phpspec": "2.0.*@dev"
+    },
+    "bin": [
+        "bin/composer-yaml"
+    ],
+    "require": {
+        "symfony/console": "*",
+        "rackspace/php-opencloud": "dev-master",
+        "youngj/httpserver": "*",
+        "sebastian/phpcpd": "*",
+        "squizlabs/php_codesniffer": "*",
+        "sebastian/phpdcd": "*",
+        "phploc/phploc": "*",
+        "rmccue/requests": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "WPAPlugin\\": "src/",
+            "WPAPlugin\\Commands\\": "src/Commands/"
+        }
+    }
+}

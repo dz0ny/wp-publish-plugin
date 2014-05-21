@@ -1,0 +1,12 @@
+#!/usr/bin/env php
+<?php
+    /*
+     * Run the application
+     */
+    namespace WPAPlugin;
+
+    require __DIR__ . DIRECTORY_SEPARATOR.'..'.DIRECTORY_SEPARATOR.'vendor'.DIRECTORY_SEPARATOR.'autoload.php';
+
+    $application = new Application();
+    $application->boot();
+    $application->run();
